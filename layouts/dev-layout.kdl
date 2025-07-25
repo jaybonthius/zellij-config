@@ -12,19 +12,19 @@ layout {
     tab name="nvim" focus=true {
         pane split_direction="vertical" {
             pane command="nvim" size="70%" focus=true
-            pane command="claude" size="30%" {
-                args "code"
+            pane stacked=true size="30%" {
+                pane expanded=true
+                pane
+                pane
             }
         }
     }
     
     tab name="terminal" {
         pane stacked=true {
-            pane name="claude" command="claude" expanded=true {
-                args "code"
-            }
-            pane name="terminal 1"
-            pane name="terminal 2"
+            pane expanded=true
+            pane
+            pane name="AI" command="claude"
         }
     }
 }
