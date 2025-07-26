@@ -1,5 +1,9 @@
-keybinds {
-    normal clear-defaults=true {
+keybinds clear-defaults=true {
+    unbind "Ctrl h"
+    unbind "Ctrl t"
+    unbind "Ctrl n"
+    unbind "Ctrl s"
+    normal {
         bind "Ctrl l" { SwitchToMode "locked"; }
         bind "Ctrl b" { SwitchToMode "tmux"; }
     }
