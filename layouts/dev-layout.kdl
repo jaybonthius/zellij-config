@@ -1,11 +1,28 @@
 layout {
     default_tab_template {
-        pane size=1 borderless=true {
-            plugin location="zellij:tab-bar"
-        }
         children
-        pane size=2 borderless=true {
-            plugin location="zellij:status-bar" 
+        pane size=1 borderless=true {
+            plugin location="file:~/.config/zellij/plugins/zjstatus.wasm"{
+                // hide_frame_for_single_pane "true"
+
+                format_left  "{mode}#[fg=#849289,bg=#343F44,bold] {session} #[fg=#383E5A,bg=bg] #[fg=white,bg=fg] {tabs}"
+                // format_right "#[fg=blue,bg=bg]{datetime}"
+                // format_space "#[bg=fg]"
+
+                datetime          "#[fg=#1A1B26,bg=blue]{format}"
+                datetime_format   "  %H:%M "
+                datetime_timezone "America/Detroit"
+
+                mode_normal   "#[fg=#2E353B,bg=green,bold] Normal "
+                mode_locked   "#[fg=#2E353B,bg=red,bold] Locked "
+                mode_tmux   "#[fg=#2E353B,bg=cyan,bold]  TMUX  "
+                mode_pane     "#[fg=#2E353B,bg=magenta,bold]  Pane  "
+                mode_session  "#[fg=#2E353B,bg=yellow,bold] Session "
+                mode_tab      "#[fg=#2E353B,bg=green,bold]  Tab   "
+
+                tab_normal  "#[fg=#849289,bg=fg] [{index}] {name}"
+                tab_active  "#[fg=green,bg=fg,bold] [{index}] {name}"
+            }
         }
     }
     
@@ -24,7 +41,7 @@ layout {
         pane stacked=true {
             pane expanded=true
             pane
-            pane name="AI" command="claude"
+            pane 
         }
     }
 }
