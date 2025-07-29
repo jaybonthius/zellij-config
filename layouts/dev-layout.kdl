@@ -27,14 +27,7 @@ layout {
     }
     
     tab name="nvim" focus=true {
-        pane split_direction="vertical" {
-            pane command="nvim" size="70%" focus=true
-            pane stacked=true size="30%" {
-                pane expanded=true
-                pane
-                pane
-            }
-        }
+		pane command="nvim" focus=true
     }
     
     tab name="terminal" {
