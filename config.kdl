@@ -123,4 +123,5 @@ load_plugins {
 theme "everforest-dark-medium"
 default_mode "normal"
 show_startup_tips false
+default_shell "fish"
  
