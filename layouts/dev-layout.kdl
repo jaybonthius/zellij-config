@@ -26,8 +26,8 @@ layout {
         }
     }
     
-    tab name="nvim" focus=true {
-		pane command="nvim" focus=true
+    tab name="helix" focus=true {
+		pane command="hx" focus=true
     }
     
     tab name="terminal" {
@@ -36,5 +36,9 @@ layout {
             pane
             pane 
         }
+    }
+
+    tab name="git" {
+		pane command="lazygit"
     }
 }
