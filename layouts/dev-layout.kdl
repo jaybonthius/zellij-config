@@ -38,6 +38,10 @@ layout {
         }
     }
 
+    tab name="ai" {
+		pane command="claude"
+    }
+    
     tab name="git" {
 		pane command="lazygit"
     }
