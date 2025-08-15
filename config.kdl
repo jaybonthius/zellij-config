@@ -4,11 +4,18 @@ keybinds clear-defaults=true {
     unbind "Ctrl n"
     unbind "Ctrl s"
     normal {
-        bind "Ctrl l" { SwitchToMode "locked"; }
+        bind "Ctrl Alt Super u" { GoToPreviousTab; }
+        bind "Ctrl Alt Super i" { GoToNextTab; }
+        bind "Ctrl Alt Super o" { ToggleTab; }
+        bind "Ctrl Alt Super Shift l" { SwitchToMode "locked"; }
         bind "Ctrl b" { SwitchToMode "tmux"; }
+        bind "Ctrl Alt Super h" { GoToTab 1; }
+        bind "Ctrl Alt Super t" { GoToTab 2; }
+        bind "Ctrl Alt Super a" { GoToTab 3; }
+        bind "Ctrl Alt Super g" { GoToTab 4; }
     }
     locked {
-        bind "Ctrl l" { SwitchToMode "normal"; }
+        bind "Ctrl Alt Super Shift l" { SwitchToMode "normal"; }
     }
     session {
         bind "a" {
