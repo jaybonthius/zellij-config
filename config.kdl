@@ -120,7 +120,7 @@ plugins {
 
 load_plugins {
 }
-theme "catppuccin-latte"
+theme "catppuccin-macchiato"
 default_mode "normal"
 show_startup_tips false
 default_shell "fish"
