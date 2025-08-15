@@ -120,7 +120,7 @@ plugins {
 
 load_plugins {
 }
-theme "tokyo-night-dark"
+theme "catppuccin-latte"
 default_mode "normal"
 show_startup_tips false
 default_shell "fish"
